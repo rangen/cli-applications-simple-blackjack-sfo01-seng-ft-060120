@@ -36,6 +36,7 @@ def hit?(card_total)
   elsif player_decision == 's'
   else
     invalid_command
+    hit?(card_total)
     return card_total
   end
   card_total
